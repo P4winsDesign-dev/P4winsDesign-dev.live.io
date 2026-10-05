@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>P4wins Website Creation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            background: #140816;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        /* HOME */
+        #home {
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.35),
+                    rgba(0, 0, 0, 0.6)
+                ),
+                url("sunset.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            padding: 30px;
+        }
+
+        .home-content {
+            max-width: 900px;
+        }
+
+        .home-content h1 {
+            font-size: clamp(45px, 7vw, 80px);
+            margin-bottom: 25px;
+            text-shadow: 0 5px 20px black;
+        }
+
+        .home-content p {
+            font-size: 20px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+
+            background: #ff7043;
+            color: white;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            border-radius: 30px;
+
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #ff5722;
+            transform: translateY(-3px);
+        }
+
+        /* GENERAL SECTIONS */
+        section {
+            min-height: 60vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 100px 8%;
+        }
+
+        section h2 {
+            font-size: 45px;
+            margin-bottom: 25px;
+        }
+
+        section p {
+            max-width: 750px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #eeeeee;
+        }
+
+        /* ABOUT */
+        #about {
+            background: linear-gradient(
+                135deg,
+                #281331,
+                #4b2050
+            );
+        }
+
+        /* ORDER */
+        #order {
+            background: #140816;
+        }
+
+        .email {
+            margin-top: 30px;
+
+            display: inline-block;
+
+            padding: 15px 25px;
+
+            color: #ffd166;
+            border: 2px solid #ffd166;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .email:hover {
+            background: #ffd166;
+            color: #140816;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #09050c;
+            color: #aaa;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            nav {
+                padding: 15px 5%;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .home-content h1 {
+                font-size: 42px;
+            }
+
+            .home-content p {
+                font-size: 16px;
+            }
+
+            section h2 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <div class="logo">
+            P4wins
+        </div>
+
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About Us</a>
+            </li>
+
+            <li>
+                <a href="#order">Order</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- HOME SECTION -->
+    <section id="home">
+
+        <div class="home-content">
+
+            <h1>
+                Welcome to P4wins Website Creation
+            </h1>
+
+            <p>
+                We create beautiful, modern and professional
+                websites for businesses, brands and individuals.
+            </p>
+
+            <a href="#order" class="button">
+                Order Your Website
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT US SECTION -->
+    <section id="about">
+
+        <h2>
+            About Us
+        </h2>
+
+        <p>
+            P4wins Website Creation is a website design service
+            dedicated to creating modern, attractive and
+            user-friendly websites.
+
+            <br><br>
+
+            We create websites that help businesses,
+            brands and individuals build a strong presence
+            online.
+        </p>
+
+    </section>
+
+
+    <!-- ORDER SECTION -->
+    <section id="order">
+
+        <h2>
+            Order Your Website
+        </h2>
+
+        <p>
+            Ready to create your website?
+
+            Contact P4wins Website Creation and tell us
+            what kind of website you would like.
+        </p>
+
+        <a
+            href="mailto:p4winsdesign"
+            class="email"
+        >
+            Order at: p4winsdesign@gmail.com
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 P4wins Website Creation
+        </p>
+
+    </footer>
+
+</body>
+</html>
